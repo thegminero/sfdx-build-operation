@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" 
+access="global" controller="HelloWorld">
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<aura:attribute name="whom" type="String" default="world"/>
+
+    <div class="hello-container">
+        <span>Hello {!v.whom}!</span>
+    </div>
+
+</aura:component>	
