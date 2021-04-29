@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Validate branch name requirements
-             run: |
+            - run: |
                   echo "Checking branch name FSM-JIRA-description"
               with:
                   regex: '([FSM])+-([0-9]{4,5})+-([a-z|A-Z]{4,10})'
