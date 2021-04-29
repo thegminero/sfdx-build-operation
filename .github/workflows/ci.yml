@@ -11,8 +11,9 @@ jobs:
     validate-branch-name:
         runs-on: ubuntu-latest
         steps:
-            - name: "Validate branch name requirements"
-              uses: actions/javascript-action@v1-beta
+            - name: 'Validate branch name requirements'
+              run: | 
+                  echo "Checking branch name FSM-JIRA-description"
               with:
                   regex: '([FSM])+-([0-9]{4,5})+-([a-z|A-Z]{4,10})'
                   min_length: 10
