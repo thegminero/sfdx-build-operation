@@ -10,7 +10,7 @@ jobs:
     validate-branch-name:
         runs-on: ubuntu-latest
         steps:
-            - name: 'Validate branch name requirements'
+            - name: Validate branch name requirements
               run: | 
                   echo "Checking branch name FSM-JIRA-description"
               with:
